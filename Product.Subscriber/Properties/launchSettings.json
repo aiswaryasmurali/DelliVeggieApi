@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Product.Subscriber": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

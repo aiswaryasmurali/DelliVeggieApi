@@ -401,6 +401,12 @@
           "build/netcoreapp2.1/Microsoft.TestPlatform.TestHost.props": {}
         }
       },
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.10.8": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
       "Microsoft.Win32.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2200,6 +2206,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "EasyNetQ": "2.2.0",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.10.8",
           "MongoDB.Bson": "2.12.0",
           "MongoDB.Driver": "2.12.0",
           "Product.Messages": "1.0.0"
@@ -2674,6 +2681,70 @@
         "lib/uap10.0/testhost.dll",
         "microsoft.testplatform.testhost.16.5.0.nupkg.sha512",
         "microsoft.testplatform.testhost.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.10.8": {
+      "sha512": "LXlwvlXetgFg2sqsLCzi+Kd+nV78VrRzy9u6nKU05yx9tcsF9BcLqL/+vtj01Z7RPhp0U8D4Px/bHbyMR9Ddjg==",
+      "type": "package",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.10.8",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "EULA.md",
+        "ThirdPartyNotices.txt",
+        "build/Container.props",
+        "build/Container.targets",
+        "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props",
+        "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.targets",
+        "build/ToolsTarget.props",
+        "build/ToolsTarget.targets",
+        "microsoft.visualstudio.azure.containers.tools.targets.1.10.8.nupkg.sha512",
+        "microsoft.visualstudio.azure.containers.tools.targets.nuspec",
+        "tools/Microsoft.VisualStudio.Containers.Tools.Common.dll",
+        "tools/Microsoft.VisualStudio.Containers.Tools.Shared.dll",
+        "tools/Microsoft.VisualStudio.Containers.Tools.Tasks.dll",
+        "tools/Newtonsoft.Json.dll",
+        "tools/cs/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/cs/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/cs/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/de/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/de/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/de/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/es/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/es/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/es/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/fr/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/fr/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/fr/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/it/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/it/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/it/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/ja/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/ja/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/ja/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/ko/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/ko/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/ko/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/pl/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/pl/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/pl/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/pt-BR/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/pt-BR/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/pt-BR/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/ru/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/ru/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/ru/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/tr/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/tr/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/tr/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/utils/KillProcess.exe",
+        "tools/zh-Hans/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/zh-Hans/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/zh-Hans/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll"
       ]
     },
     "Microsoft.Win32.Primitives/4.3.0": {
@@ -7226,8 +7297,8 @@
     },
     "Product.Subscriber/1.0.0": {
       "type": "project",
-      "path": "../../../../Product.Subscriber/Product.Subscriber.csproj",
-      "msbuildProject": "../../../../Product.Subscriber/Product.Subscriber.csproj"
+      "path": "../../../Product.Subscriber/Product.Subscriber.csproj",
+      "msbuildProject": "../../../Product.Subscriber/Product.Subscriber.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7242,19 +7313,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {}
+    "C:\\Users\\91953\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Downloads\\DeliVeggie\\DeliVeggieApp\\DeliVeggieApp.Services\\Product.Services.Test\\Product.UnitTests\\Product.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\91953\\Desktop\\Aiswarya_Final\\DelliVeggieApp\\DeliVeggieApp.Services\\Product.Services.Test\\Product.UnitTests\\Product.UnitTests.csproj",
       "projectName": "Product.UnitTests",
-      "projectPath": "C:\\Users\\USER\\Downloads\\DeliVeggie\\DeliVeggieApp\\DeliVeggieApp.Services\\Product.Services.Test\\Product.UnitTests\\Product.UnitTests.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Downloads\\DeliVeggie\\DeliVeggieApp\\DeliVeggieApp.Services\\Product.Services.Test\\Product.UnitTests\\obj\\",
+      "projectPath": "C:\\Users\\91953\\Desktop\\Aiswarya_Final\\DelliVeggieApp\\DeliVeggieApp.Services\\Product.Services.Test\\Product.UnitTests\\Product.UnitTests.csproj",
+      "packagesPath": "C:\\Users\\91953\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\91953\\Desktop\\Aiswarya_Final\\DelliVeggieApp\\DeliVeggieApp.Services\\Product.Services.Test\\Product.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\91953\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7267,11 +7338,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\USER\\Downloads\\DeliVeggie\\DeliVeggieApp\\DeliVeggieApp.Services\\Product.Messages\\ProductMessages\\Product.Messages.csproj": {
-              "projectPath": "C:\\Users\\USER\\Downloads\\DeliVeggie\\DeliVeggieApp\\DeliVeggieApp.Services\\Product.Messages\\ProductMessages\\Product.Messages.csproj"
+            "C:\\Users\\91953\\Desktop\\Aiswarya_Final\\DelliVeggieApp\\DeliVeggieApp.Services\\Product.Messages\\ProductMessages\\Product.Messages.csproj": {
+              "projectPath": "C:\\Users\\91953\\Desktop\\Aiswarya_Final\\DelliVeggieApp\\DeliVeggieApp.Services\\Product.Messages\\ProductMessages\\Product.Messages.csproj"
             },
-            "C:\\Users\\USER\\Downloads\\DeliVeggie\\Product.Subscriber\\Product.Subscriber.csproj": {
-              "projectPath": "C:\\Users\\USER\\Downloads\\DeliVeggie\\Product.Subscriber\\Product.Subscriber.csproj"
+            "C:\\Users\\91953\\Desktop\\Aiswarya_Final\\DelliVeggieApp\\Product.Subscriber\\Product.Subscriber.csproj": {
+              "projectPath": "C:\\Users\\91953\\Desktop\\Aiswarya_Final\\DelliVeggieApp\\Product.Subscriber\\Product.Subscriber.csproj"
             }
           }
         }
@@ -7316,18 +7387,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

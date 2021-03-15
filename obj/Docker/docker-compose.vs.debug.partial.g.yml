@@ -12,19 +12,19 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_product.api$
     volumes:
-      - C:\Users\USER\Downloads\DeliVeggie\DeliVeggieApp\DeliVeggieApp.Gateway\Product.API:/app
-      - C:\Users\USER\Downloads\DeliVeggie\DeliVeggieApp:/src
-      - C:\Users\USER\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\USER\.nuget\packages\:/root/.nuget/packages:ro
+      - C:\Users\91953\Desktop\Aiswarya_Final\DelliVeggieApp\DeliVeggieApp.Gateway\Product.API:/app
+      - C:\Users\91953\Desktop\Aiswarya_Final\DelliVeggieApp:/src
+      - C:\Users\91953\vsdbg\vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_product.api$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"/app/bin/Debug/netcoreapp3.1/Product.API.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_product.api$ \"/src/../../DelliVeggieApi-test/DeliVeggieApp.Gateway/Product.API/bin/Debug/netcoreapp3.1/Product.API.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true

@@ -1,11 +1,27 @@
 services:
   product.api:
     build:
-      context: C:\Users\USER\Downloads\DeliVeggie\DeliVeggieApp
+      context: C:\Users\91953\Desktop\Aiswarya_Final\DelliVeggieApp
       dockerfile: DeliVeggieApp.Gateway/Product.API/Dockerfile
+    depends_on:
+      productdb:
+        condition: service_started
     environment:
       ASPNETCORE_ENVIRONMENT: Development
+      DatabaseSettings:ConnectionString: mongodb://productdb:27017
     image: productapi
     ports:
-    - target: 80
+    - published: 5000
+      target: 80
+  productdb:
+    container_name: productdb
+    image: mongo
+    ports:
+    - published: 27018
+      target: 27018
+    restart: always
+    volumes:
+    - mongo_data:/data/db:rw
 version: '3.4'
+volumes:
+  mongo_data: {}

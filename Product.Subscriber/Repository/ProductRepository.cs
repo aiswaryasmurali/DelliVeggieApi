@@ -28,8 +28,8 @@ namespace Product.Subscriber.Repository
         {
             _databaseSettings = new ProductDatabaseContext();
             _databaseSettings.ConnectionString = "mongodb://localhost:27017";
-            _databaseSettings.DatabaseName = "ProductMangement";
-            _databaseSettings.ProductCollectionName = "Product";
+            _databaseSettings.DatabaseName = "productdb";
+            _databaseSettings.ProductCollectionName = "Products";
             _databaseSettings.ReductionCollectionName = "PriceReductions";
 
         }

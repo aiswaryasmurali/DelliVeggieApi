@@ -6002,19 +6002,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {}
+    "C:\\Users\\91953\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Downloads\\DeliVeggie\\DeliVeggieApp\\DeliVeggieApp.Gateway\\Product.API\\Product.API.csproj",
+      "projectUniqueName": "C:\\Users\\91953\\Desktop\\Aiswarya_Final\\DelliVeggieApp\\DeliVeggieApp.Gateway\\Product.API\\Product.API.csproj",
       "projectName": "Product.API",
-      "projectPath": "C:\\Users\\USER\\Downloads\\DeliVeggie\\DeliVeggieApp\\DeliVeggieApp.Gateway\\Product.API\\Product.API.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Downloads\\DeliVeggie\\DeliVeggieApp\\DeliVeggieApp.Gateway\\Product.API\\obj\\",
+      "projectPath": "C:\\Users\\91953\\Desktop\\Aiswarya_Final\\DelliVeggieApp\\DeliVeggieApp.Gateway\\Product.API\\Product.API.csproj",
+      "packagesPath": "C:\\Users\\91953\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\91953\\Desktop\\Aiswarya_Final\\DelliVeggieApp\\DeliVeggieApp.Gateway\\Product.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\91953\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6027,8 +6027,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\USER\\Downloads\\DeliVeggie\\DeliVeggieApp\\DeliVeggieApp.Services\\Product.Messages\\ProductMessages\\Product.Messages.csproj": {
-              "projectPath": "C:\\Users\\USER\\Downloads\\DeliVeggie\\DeliVeggieApp\\DeliVeggieApp.Services\\Product.Messages\\ProductMessages\\Product.Messages.csproj"
+            "C:\\Users\\91953\\Desktop\\Aiswarya_Final\\DelliVeggieApp\\DeliVeggieApp.Services\\Product.Messages\\ProductMessages\\Product.Messages.csproj": {
+              "projectPath": "C:\\Users\\91953\\Desktop\\Aiswarya_Final\\DelliVeggieApp\\DeliVeggieApp.Services\\Product.Messages\\ProductMessages\\Product.Messages.csproj"
             }
           }
         }
@@ -6061,12 +6061,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -6075,7 +6069,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
