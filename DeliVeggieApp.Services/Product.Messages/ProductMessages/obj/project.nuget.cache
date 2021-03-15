@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XGg/OqIArwpyG3jqrE90BLzT2sxAOT11cYTjiZeOvZUupPMi53i6JoaZARJySnT3HPG1wXNOeC8mWH3wySxc0g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\USER\\Downloads\\DeliVeggie\\DeliVeggieApp\\DeliVeggieApp.Services\\Product.Messages\\ProductMessages\\Product.Messages.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
